@@ -17,10 +17,11 @@ kv_t *kv_init(size_t capacity)
     table->capacity = capacity;
     table->count = 0;
 
-    table->entryes = calloc(sizeof(kv_entry_t), capacity);
+    table->entries = calloc(sizeof(kv_entry_t), capacity);
 
-    if (table->entryes == NULL)
+    if (table->entries == NULL)
     {
+        free(table);
         return NULL;
     }
 

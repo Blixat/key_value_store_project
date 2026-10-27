@@ -14,7 +14,7 @@ typedef struct
 {
     size_t capacity;
     size_t count;
-    kv_entry_t *entryes;
+    kv_entry_t *entries;
 
 } kv_t;
 
