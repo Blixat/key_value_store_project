@@ -2,6 +2,9 @@
 #define KV_H
 
 #include <stdlib.h>
+#include <stddef.h>
+
+#define TOMBSTONE ((char *)0x1)
 
 typedef struct
 {
@@ -12,9 +15,9 @@ typedef struct
 
 typedef struct
 {
+    kv_entry_t *entries;
     size_t capacity;
     size_t count;
-    kv_entry_t *entries;
 
 } kv_t;
 
