@@ -27,3 +27,21 @@ kv_t *kv_init(size_t capacity)
 
     return table;
 }
+
+int kv_put(kv_t *db, const char *key, const char *value)
+{
+    // Din kode her
+    return 0;
+}
+
+char *kv_get(kv_t *db, const char *key)
+{
+    // Din kode her
+    return NULL;
+}
+
+int kv_delete(kv_t *db, const char *key)
+{
+    // Din kode her
+    return 0;
+}
